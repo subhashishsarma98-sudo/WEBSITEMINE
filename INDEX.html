@@ -1,0 +1,846 @@
+ACADEMIC HOMEPAGE — COMPLETE SOURCE CODE
+========================================
+
+Project files are separated by filename below. The profile image is a separate binary asset at assets/profile.png.
+
+
+================================================================================
+FILE: index.html
+================================================================================
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b35">
+  <meta name="description" content="Academic profile of Subhashish Sarma, Ph.D. scholar in Zoology at Rabindranath Thakur Vishwavidyalaya.">
+  <title>Subhashish Sarma | Research & Scientific Writing</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site-data.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="topline">
+    <div class="container topline-inner">
+      <span>ACADEMIC PROFILE <i></i> RESEARCH <i></i> SCIENTIFIC WRITING</span>
+      <span class="topline-note">An open notebook of ideas, evidence and discovery</span>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Go to home page">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" role="img">
+            <path d="M9 5c22 7 22 23 0 30M31 5C9 12 9 28 31 35M11 10h18M8 17h24M8 24h24M11 31h18" />
+            <circle cx="9" cy="5" r="2"/><circle cx="31" cy="35" r="2"/>
+          </svg>
+        </span>
+        <span class="brand-text"><strong data-site-name>Subhashish Sarma</strong><small>Research & scientific writing</small></span>
+      </a>
+
+      <!-- NAVIGATION: When the other pages are built, change these href values to
+           publications.html, blog.html and contact.html respectively. -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#top">Home</a>
+        <a class="nav-link" href="#latest-publications">Publications</a>
+        <a class="nav-link" href="#latest-articles">Blog</a>
+        <a class="nav-link" href="#contact-preview">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero-section">
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-line"></span><span data-hero-kicker>ACADEMIC PROFILE · ZOOLOGY</span></div>
+          <p class="hero-intro">Hello, I’m</p>
+          <h1 data-hero-heading>Subhashish <em>Sarma.</em></h1>
+          <p class="hero-role" data-role>PhD Scholar in Zoology</p>
+          <p class="hero-description" data-hero-description>
+            Exploring the relationships between insects and their associated microorganisms, with an interest in microbial ecology, gut bacteriomes and the biology of sericulture.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#latest-publications">Explore my work <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#about">More about me <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-meta">
+            <span class="status-dot"></span>
+            <span data-affiliation>Department of Zoology · Rabindranath Tagore University, Hojai, Assam</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay">
+          <div class="portrait-frame">
+            <div class="portrait-topline"><span>FIELD NOTES / 01</span><span>ASSAM, INDIA</span></div>
+            <div class="portrait-image-wrap">
+              <!-- Your photograph is stored at assets/profile.png. The initials appear if the image cannot load. -->
+              <div class="portrait-fallback" id="portrait-fallback" aria-label="Photo placeholder">
+                <span class="fallback-monogram" data-monogram>SS</span>
+                <span class="fallback-caption">YOUR PHOTOGRAPH<br>GOES HERE</span>
+              </div>
+              <img id="profile-photo" src="assets/profile.png" alt="Portrait of Subhashish Sarma" hidden>
+              <div class="portrait-corner" aria-hidden="true"></div>
+            </div>
+            <div class="portrait-caption"><span data-photo-caption>Researcher · Zoology</span><span class="caption-symbol">✳</span></div>
+          </div>
+          <div class="science-stamp" aria-hidden="true">
+            <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44"/><circle cx="50" cy="50" r="31"/><path d="M50 19v62M19 50h62M28 28l44 44M72 28 28 72"/><circle cx="50" cy="50" r="7"/></svg>
+            <span>SCIENCE<br>IN CONTEXT</span>
+          </div>
+          <div class="floating-note" aria-hidden="true"><span class="note-dot"></span>Curiosity, cultivated.</div>
+        </div>
+      </div>
+      <div class="hero-bottom container"><span>01 — INTRODUCTION</span><span>SCROLL TO EXPLORE <span class="scroll-arrow">↓</span></span></div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container two-column">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE ABOUT ME</p>
+          <h2>Science begins<br>with <em>good questions.</em></h2>
+          <div class="section-index">01 <span>/ ABOUT</span></div>
+        </div>
+        <div class="about-content reveal reveal-delay">
+          <p class="large-copy" data-about-lead>I am a researcher in zoology interested in understanding the microbial communities associated with insects and the ways these relationships influence insect biology.</p>
+          <p data-about-body>My current academic interests centre on insect gut bacteriomes, microbial diversity, probiotic bacteria and sericulture. I am particularly interested in combining microbiological techniques with modern sequencing approaches to better understand insect–microbe associations.</p>
+          <a class="text-link dark-link" href="#research-interests">Discover my research interests <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="research-section" id="research-interests">
+      <div class="container">
+        <div class="section-topline reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> AREAS OF INTEREST</p>
+            <h2>Where my curiosity <em>lives.</em></h2>
+          </div>
+          <p class="section-aside">A few of the themes that shape my academic work and scientific questions.</p>
+        </div>
+        <div class="interest-grid" id="interest-grid">
+          <article class="interest-card reveal"><span class="interest-number">01</span><span class="interest-icon icon-cell" aria-hidden="true">◉</span><h3>Insect gut microbiomes</h3><p>Exploring the diversity and functional potential of microorganisms associated with insects.</p></article>
+          <article class="interest-card reveal reveal-delay-1"><span class="interest-number">02</span><span class="interest-icon icon-dna" aria-hidden="true">⌁</span><h3>Microbial ecology</h3><p>Understanding microbial communities, their interactions and their ecological roles.</p></article>
+          <article class="interest-card reveal reveal-delay-2"><span class="interest-number">03</span><span class="interest-icon icon-leaf" aria-hidden="true">❋</span><h3>Probiotic applications</h3><p>Investigating beneficial bacteria and their potential applications in insect health and rearing.</p></article>
+          <article class="interest-card reveal reveal-delay-3"><span class="interest-number">04</span><span class="interest-icon icon-lab" aria-hidden="true">⌬</span><h3>Sericulture research</h3><p>Studying insect biology and microbiome-informed approaches relevant to sericulture.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section publications-section" id="latest-publications">
+      <div class="container">
+        <div class="section-topline reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> SELECTED RESEARCH</p>
+            <h2>Latest <em>publications.</em></h2>
+          </div>
+          <a class="text-link dark-link" href="#latest-publications">View all publications <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="publication-list" id="publication-list" aria-live="polite">
+          <!-- Publication previews are generated from the publications array in site-data.js. -->
+        </div>
+        <p class="section-footnote">Publication details and DOI links will be added here from your verified publication list.</p>
+      </div>
+    </section>
+
+    <section class="articles-section" id="latest-articles">
+      <div class="container">
+        <div class="section-topline reveal">
+          <div>
+            <p class="eyebrow light-eyebrow"><span class="eyebrow-line"></span> FROM THE NOTEBOOK</p>
+            <h2>Ideas worth <em>sharing.</em></h2>
+          </div>
+          <div class="article-heading-note">Science, explained with context.<br>New writing added regularly.</div>
+        </div>
+        <div class="article-grid" id="article-grid" aria-live="polite">
+          <!-- Article previews are generated from the articles array in site-data.js. -->
+        </div>
+        <div class="articles-bottom"><span>02 — SCIENTIFIC WRITING</span><span>NEW ARTICLES ADDED WEEKLY <span class="pulse-dot"></span></span></div>
+      </div>
+    </section>
+
+    <section class="contact-preview" id="contact-preview">
+      <div class="container contact-preview-inner reveal">
+        <div><p class="eyebrow"><span class="eyebrow-line"></span> CONNECT</p><h2>Good science grows<br>through <em>conversation.</em></h2></div>
+        <div class="contact-preview-copy"><p>For academic discussions, research collaborations, or questions about my work, please get in touch.</p><a class="button button-primary" href="mailto:REPLACE_WITH_YOUR_EMAIL">Get in touch <span aria-hidden="true">↗</span></a><small>Replace the email link when your contact details are ready.</small></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M9 5c22 7 22 23 0 30M31 5C9 12 9 28 31 35M11 10h18M8 17h24M8 24h24M11 31h18"/><circle cx="9" cy="5" r="2"/><circle cx="31" cy="35" r="2"/></svg></span><span class="brand-text"><strong data-site-name>Subhashish Sarma</strong><small>Research & scientific writing</small></span></a>
+      <p>Thoughtful questions. Careful methods. Meaningful discoveries.</p>
+      <a class="back-top" href="#top">BACK TO TOP ↑</a>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="current-year"></span> <span data-site-name>Subhashish Sarma</span>. All rights reserved.</span><span>BUILT AROUND CURIOSITY <b>✳</b></span></div>
+  </footer>
+
+  <noscript><div class="noscript-message">This website uses a small amount of JavaScript to display publication and article previews. Please enable JavaScript for the full experience.</div></noscript>
+</body>
+</html>
+
+
+
+================================================================================
+FILE: styles.css
+================================================================================
+
+/* =====================================================================
+   DESIGN SETTINGS — change these variables to adjust the whole website
+   ===================================================================== */
+:root {
+  --ink: #142e36;
+  --ink-soft: #31505a;
+  --teal: #2d8279;
+  --mint: #a9d5c6;
+  --paper: #f7f8f4;
+  --white: #ffffff;
+  --sand: #e8e9df;
+  --muted: #718087;
+  --line: rgba(20, 46, 54, .14);
+  --night: #102b35;
+  --night-2: #183a43;
+  --serif: Georgia, 'Times New Roman', serif;
+  --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --content-width: 1160px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 92px; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); font-size: 15px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+body.menu-open { overflow: hidden; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+.container { width: min(var(--content-width), calc(100% - 64px)); margin-inline: auto; }
+.skip-link { position: absolute; z-index: 100; top: -60px; left: 12px; padding: 10px 14px; color: white; background: var(--ink); }
+.skip-link:focus { top: 12px; }
+
+/* Small top strip and main navigation */
+.topline { background: var(--night); color: #b7c9c8; font-size: 9px; letter-spacing: .16em; }
+.topline-inner { min-height: 34px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.topline i { display: inline-block; width: 3px; height: 3px; margin: 0 8px 2px; border-radius: 50%; background: var(--mint); }
+.topline-note { color: #8da6a5; letter-spacing: .07em; text-transform: none; }
+.site-header { position: sticky; top: 0; z-index: 50; background: rgba(247, 248, 244, .94); border-bottom: 1px solid transparent; backdrop-filter: blur(14px); transition: border-color .25s, box-shadow .25s; }
+.site-header.scrolled { border-color: var(--line); box-shadow: 0 8px 30px rgba(16, 43, 53, .06); }
+.nav-wrap { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+.brand { display: inline-flex; align-items: center; gap: 11px; min-width: 220px; }
+.brand-mark { display: grid; width: 42px; height: 42px; place-items: center; color: var(--teal); border: 1px solid rgba(45, 130, 121, .35); border-radius: 50%; }
+.brand-mark svg { width: 29px; fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+.brand-mark svg circle { fill: currentColor; stroke: none; }
+.brand-text { display: flex; flex-direction: column; line-height: 1.25; }
+.brand-text strong { font-family: var(--serif); font-size: 16px; font-weight: 600; letter-spacing: -.02em; }
+.brand-text small { margin-top: 4px; color: var(--muted); font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
+.primary-nav { display: flex; align-items: center; gap: clamp(22px, 3.5vw, 46px); }
+.nav-link { position: relative; padding: 9px 0; color: #53666b; font-size: 12px; font-weight: 550; transition: color .2s; }
+.nav-link::after { position: absolute; right: 0; bottom: 2px; left: 0; height: 1px; content: ''; background: var(--teal); transform: scaleX(0); transform-origin: left; transition: transform .25s; }
+.nav-link:hover, .nav-link.active { color: var(--teal); }
+.nav-link:hover::after, .nav-link.active::after { transform: scaleX(1); }
+.menu-toggle { display: none; }
+
+/* Hero */
+.hero-section { position: relative; overflow: hidden; min-height: 660px; padding: 83px 0 36px; color: white; background: var(--night); isolation: isolate; }
+.hero-section::before { position: absolute; z-index: -2; top: -380px; right: -190px; width: 790px; height: 790px; content: ''; border: 1px solid rgba(169, 213, 198, .12); border-radius: 50%; box-shadow: 0 0 0 75px rgba(169, 213, 198, .025), 0 0 0 150px rgba(169, 213, 198, .02); }
+.hero-section::after { position: absolute; z-index: -2; right: 0; bottom: 0; left: 0; height: 1px; content: ''; background: linear-gradient(90deg, transparent, rgba(169, 213, 198, .35), transparent); }
+.hero-orbit { position: absolute; z-index: -1; border: 1px solid rgba(169, 213, 198, .12); border-radius: 50%; pointer-events: none; }
+.orbit-one { top: 170px; right: 9%; width: 370px; height: 370px; }
+.orbit-two { top: 225px; right: 13%; width: 260px; height: 260px; border-style: dashed; animation: slow-spin 42s linear infinite; }
+.hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 8%; }
+.hero-copy { position: relative; z-index: 2; padding: 20px 0 43px; }
+.eyebrow { display: flex; align-items: center; gap: 11px; margin: 0 0 26px; color: var(--teal); font-size: 9px; font-weight: 650; letter-spacing: .19em; text-transform: uppercase; }
+.eyebrow-line { display: inline-block; width: 28px; height: 1px; background: currentColor; }
+.hero-section .eyebrow { color: var(--mint); }
+.hero-intro { margin: 0 0 -7px; color: #a9c0bd; font-family: var(--serif); font-size: 22px; font-style: italic; }
+h1, h2, h3, p { margin-top: 0; }
+.hero-copy h1 { max-width: 700px; margin: 0; font-family: var(--serif); font-size: clamp(55px, 7vw, 91px); font-weight: 400; letter-spacing: -.065em; line-height: .99; }
+.hero-copy h1 em, h2 em { color: var(--mint); font-weight: 400; }
+.hero-role { margin: 23px 0 12px; color: #d2e1dc; font-size: 14px; font-weight: 550; letter-spacing: .03em; }
+.hero-description { max-width: 510px; margin-bottom: 29px; color: #a9bcbd; font-size: 14px; line-height: 1.9; }
+.hero-actions { display: flex; align-items: center; gap: 27px; flex-wrap: wrap; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 22px; min-height: 48px; padding: 0 19px; font-size: 11px; font-weight: 650; letter-spacing: .02em; transition: transform .2s, background .2s, color .2s; }
+.button:hover { transform: translateY(-2px); }
+.button-primary { color: var(--night); background: var(--mint); }
+.button-primary:hover { background: #c4e2d6; }
+.button span { font-size: 16px; }
+.text-link { display: inline-flex; align-items: center; gap: 12px; color: #d5e2df; font-size: 11px; font-weight: 550; transition: gap .2s, color .2s; }
+.text-link:hover { gap: 17px; color: var(--mint); }
+.hero-meta { display: flex; align-items: center; gap: 9px; margin-top: 61px; color: #91aaa9; font-size: 10px; letter-spacing: .035em; }
+.status-dot, .pulse-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--mint); box-shadow: 0 0 0 4px rgba(169, 213, 198, .12); }
+.hero-visual { position: relative; width: min(100%, 390px); justify-self: end; padding: 24px 23px 25px; }
+.portrait-frame { position: relative; z-index: 1; padding: 12px; border: 1px solid rgba(169, 213, 198, .35); background: rgba(255, 255, 255, .035); box-shadow: 20px 24px 70px rgba(0, 0, 0, .17); transform: rotate(1.5deg); }
+.portrait-topline, .portrait-caption { display: flex; align-items: center; justify-content: space-between; color: #90aaa7; font-size: 8px; letter-spacing: .15em; }
+.portrait-topline { padding: 4px 3px 12px; }
+.portrait-image-wrap { position: relative; overflow: hidden; height: 390px; background: linear-gradient(145deg, #d5e1d7 0%, #789b91 42%, #335d5c 100%); }
+.portrait-image-wrap::after { position: absolute; inset: 0; content: ''; background: linear-gradient(180deg, transparent 50%, rgba(9, 31, 36, .2)); pointer-events: none; }
+#profile-photo { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+#profile-photo[hidden], .portrait-fallback[hidden] { display: none; }
+.portrait-fallback { display: flex; width: 100%; height: 100%; flex-direction: column; align-items: center; justify-content: center; color: #eaf4ec; background: radial-gradient(circle at 50% 35%, rgba(224, 241, 225, .26), transparent 34%), linear-gradient(145deg, #71958a, #284d50); }
+.fallback-monogram { display: grid; width: 130px; height: 130px; place-items: center; margin-bottom: 22px; border: 1px solid rgba(255, 255, 255, .52); border-radius: 50%; font-family: var(--serif); font-size: 55px; font-style: italic; }
+.fallback-caption { font-size: 8px; letter-spacing: .2em; line-height: 1.8; text-align: center; }
+.portrait-corner { position: absolute; right: 12px; bottom: 12px; width: 48px; height: 48px; border-right: 1px solid rgba(255, 255, 255, .6); border-bottom: 1px solid rgba(255, 255, 255, .6); }
+.portrait-caption { min-height: 34px; padding: 9px 3px 0; }
+.caption-symbol { color: var(--mint); font-size: 17px; }
+.science-stamp { position: absolute; z-index: 2; top: 1px; right: -4px; display: grid; width: 102px; height: 102px; place-items: center; color: var(--mint); }
+.science-stamp svg { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: .7; opacity: .8; }
+.science-stamp span { font-size: 7px; letter-spacing: .15em; line-height: 1.5; text-align: center; }
+.floating-note { position: absolute; z-index: 3; right: -14px; bottom: 70px; display: flex; align-items: center; gap: 9px; padding: 11px 14px; color: var(--ink); background: #eef2e9; box-shadow: 0 10px 35px rgba(0, 0, 0, .15); font-family: var(--serif); font-size: 13px; font-style: italic; transform: rotate(-2deg); }
+.note-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--teal); }
+.hero-bottom { display: flex; justify-content: space-between; margin-top: 25px; padding-top: 16px; border-top: 1px solid rgba(169, 213, 198, .17); color: #789391; font-size: 8px; letter-spacing: .16em; }
+.scroll-arrow { margin-left: 9px; color: var(--mint); font-size: 13px; }
+
+/* About section */
+.section { padding: 112px 0; }
+.about-section { background: var(--paper); }
+.two-column { display: grid; grid-template-columns: .85fr 1.15fr; gap: 12%; }
+.section-heading h2, .section-topline h2, .contact-preview h2 { margin: 0; font-family: var(--serif); font-size: clamp(40px, 5vw, 62px); font-weight: 400; letter-spacing: -.055em; line-height: 1.08; }
+.section-heading h2 em, .section-topline h2 em, .contact-preview h2 em { color: var(--teal); }
+.section-index { margin-top: 49px; color: var(--teal); font-family: var(--serif); font-size: 27px; }
+.section-index span { color: #9aa7a3; font-family: var(--sans); font-size: 9px; letter-spacing: .16em; }
+.about-content { padding-top: 43px; }
+.large-copy { margin-bottom: 20px; color: var(--ink); font-family: var(--serif); font-size: 23px; line-height: 1.5; }
+.about-content > p:not(.large-copy) { max-width: 590px; margin-bottom: 26px; color: #6a7b7e; font-size: 13px; line-height: 2; }
+.dark-link { color: var(--teal); }
+
+/* Research interests */
+.research-section { padding: 100px 0 112px; background: #edf1eb; }
+.section-topline { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 46px; }
+.section-topline .eyebrow { margin-bottom: 19px; }
+.section-aside { max-width: 280px; margin: 0 0 5px; color: #778786; font-size: 12px; line-height: 1.85; }
+.interest-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.interest-card { position: relative; min-height: 235px; padding: 27px 24px 25px 0; border-right: 1px solid var(--line); }
+.interest-card:not(:first-child) { padding-left: 24px; }
+.interest-card:last-child { border-right: 0; }
+.interest-number { color: #9aa9a2; font-size: 9px; letter-spacing: .14em; }
+.interest-icon { display: block; margin: 22px 0 14px; color: var(--teal); font-family: var(--serif); font-size: 32px; line-height: 1; }
+.interest-card h3 { margin: 0 0 9px; font-family: var(--serif); font-size: 19px; font-weight: 500; letter-spacing: -.02em; }
+.interest-card p { max-width: 220px; margin: 0; color: #71817e; font-size: 11px; line-height: 1.8; }
+
+/* Publication previews */
+.publications-section { background: var(--paper); }
+.publications-section .section-topline { margin-bottom: 38px; }
+.publication-list { border-top: 1px solid var(--line); }
+.publication-item { display: grid; grid-template-columns: 90px 1fr 190px; align-items: start; gap: 25px; padding: 29px 0; border-bottom: 1px solid var(--line); transition: padding .2s; }
+.publication-item:hover { padding-right: 8px; padding-left: 8px; }
+.publication-year { padding-top: 3px; color: var(--teal); font-family: var(--serif); font-size: 22px; }
+.publication-journal { margin: 0 0 7px; color: #899793; font-size: 8px; font-weight: 650; letter-spacing: .15em; text-transform: uppercase; }
+.publication-main h3 { max-width: 720px; margin: 0 0 7px; font-family: var(--serif); font-size: 21px; font-weight: 500; line-height: 1.35; }
+.publication-authors { margin: 0 0 7px; color: #72817e; font-size: 10px; }
+.publication-abstract { max-width: 760px; margin: 10px 0 0; color: #7a8986; font-size: 11px; line-height: 1.8; }
+.doi-link { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 8px; margin-top: 3px; padding: 11px 12px; border: 1px solid var(--line); color: var(--teal); font-size: 9px; transition: border-color .2s, background .2s; }
+.doi-link:hover { border-color: var(--teal); background: #eef3ed; }
+.doi-link span { color: #93a09b; font-size: 8px; letter-spacing: .12em; }
+.doi-link b { overflow: hidden; font-size: 9px; font-weight: 550; text-overflow: ellipsis; white-space: nowrap; }
+.doi-link i { font-size: 14px; font-style: normal; }
+.doi-link[aria-disabled="true"] { pointer-events: none; opacity: .6; }
+.empty-state { display: flex; align-items: center; gap: 22px; min-height: 150px; padding: 25px 0; border-bottom: 1px solid var(--line); }
+.empty-symbol { color: var(--teal); font-family: var(--serif); font-size: 45px; }
+.empty-state h3 { margin: 0 0 5px; font-family: var(--serif); font-size: 21px; font-weight: 500; }
+.empty-state p { max-width: 590px; margin: 0; color: #7a8986; font-size: 11px; line-height: 1.8; }
+.empty-state code, .article-card code { color: var(--teal); font-size: .95em; }
+.empty-label { margin-left: auto; color: #9ca9a4; font-size: 8px; letter-spacing: .13em; white-space: nowrap; }
+.section-footnote { margin: 16px 0 0; color: #9aa6a1; font-size: 10px; }
+
+/* Blog preview */
+.articles-section { overflow: hidden; padding: 104px 0 34px; color: #eef5ef; background: var(--night); }
+.articles-section::before { position: absolute; content: ''; }
+.light-eyebrow { color: var(--mint); }
+.articles-section .section-topline h2 { color: #f2f5ee; }
+.articles-section .section-topline h2 em { color: var(--mint); }
+.article-heading-note { margin-bottom: 6px; color: #9fb4b0; font-family: var(--serif); font-size: 15px; font-style: italic; line-height: 1.7; }
+.article-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.article-card { display: flex; min-height: 320px; flex-direction: column; border: 1px solid rgba(169, 213, 198, .19); background: rgba(255, 255, 255, .035); transition: transform .25s, border-color .25s, background .25s; }
+.article-card:hover { border-color: rgba(169, 213, 198, .55); background: rgba(255, 255, 255, .06); transform: translateY(-5px); }
+.article-card-top { display: flex; justify-content: space-between; gap: 10px; padding: 15px 17px; border-bottom: 1px solid rgba(169, 213, 198, .14); color: #91aaa5; font-size: 8px; letter-spacing: .13em; }
+.article-card-body { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: 23px 20px 20px; }
+.article-date { margin: 0 0 14px; color: var(--mint); font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
+.article-card h3 { margin: 0 0 12px; color: #f1f4ee; font-family: var(--serif); font-size: 23px; font-weight: 400; line-height: 1.28; }
+.article-card-body > p:not(.article-date) { margin: 0 0 20px; color: #9cb0ad; font-size: 11px; line-height: 1.85; }
+.article-read { display: inline-flex; align-items: center; gap: 14px; margin-top: auto; padding-top: 7px; color: var(--mint); font-size: 10px; font-weight: 600; }
+.article-read span { font-size: 15px; transition: transform .2s; }
+.article-read:hover span { transform: translate(3px, -3px); }
+.article-placeholder { min-height: 260px; }
+.article-side-note { display: flex; flex-direction: column; justify-content: center; padding: 25px; border: 1px dashed rgba(169, 213, 198, .26); }
+.side-note-icon { color: var(--mint); font-size: 26px; }
+.article-side-note p { max-width: 280px; margin: 18px 0; color: #d9e5df; font-family: var(--serif); font-size: 23px; line-height: 1.5; }
+.side-note-label { color: #809d98; font-size: 8px; letter-spacing: .16em; }
+.muted-read { color: #718d88; }
+.articles-bottom { display: flex; justify-content: space-between; margin-top: 55px; padding: 16px 0 0; border-top: 1px solid rgba(169, 213, 198, .17); color: #77938f; font-size: 8px; letter-spacing: .16em; }
+.pulse-dot { display: inline-block; width: 5px; height: 5px; margin-left: 8px; vertical-align: 1px; animation: pulse 1.8s ease-in-out infinite; }
+
+/* Contact preview and footer */
+.contact-preview { padding: 100px 0; background: #e9eee7; }
+.contact-preview-inner { display: grid; grid-template-columns: 1fr .7fr; align-items: end; gap: 12%; }
+.contact-preview h2 { font-size: clamp(39px, 4.8vw, 59px); }
+.contact-preview-copy p { max-width: 340px; margin: 0 0 20px; color: #6d7d79; font-size: 12px; line-height: 1.9; }
+.contact-preview .button { color: white; background: var(--night); }
+.contact-preview .button:hover { background: var(--teal); }
+.contact-preview-copy small { display: block; margin-top: 11px; color: #8d9c96; font-size: 9px; }
+.site-footer { color: #dbe7e0; background: #0c222a; }
+.footer-main { display: flex; align-items: center; justify-content: space-between; gap: 25px; min-height: 120px; }
+.footer-brand .brand-mark { color: var(--mint); border-color: rgba(169, 213, 198, .35); }
+.footer-brand .brand-text strong { color: #f3f5ef; }
+.footer-brand .brand-text small { color: #819a95; }
+.footer-main > p { margin: 0; color: #8da7a1; font-family: var(--serif); font-size: 14px; font-style: italic; }
+.back-top { color: var(--mint); font-size: 8px; letter-spacing: .15em; }
+.footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding: 16px 0 19px; border-top: 1px solid rgba(169, 213, 198, .14); color: #718c87; font-size: 8px; letter-spacing: .08em; }
+.footer-bottom b { padding-left: 5px; color: var(--mint); font-size: 13px; }
+.noscript-message { padding: 20px; color: var(--ink); background: var(--mint); text-align: center; }
+
+/* Motion */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+.reveal-delay, .reveal-delay-1 { transition-delay: .12s; }
+.reveal-delay-2 { transition-delay: .22s; }
+.reveal-delay-3 { transition-delay: .32s; }
+@keyframes slow-spin { to { transform: rotate(360deg); } }
+@keyframes pulse { 0%, 100% { opacity: .45; box-shadow: 0 0 0 0 rgba(169, 213, 198, .2); } 50% { opacity: 1; box-shadow: 0 0 0 5px rgba(169, 213, 198, .1); } }
+
+/* Responsive layouts */
+@media (max-width: 900px) {
+  .container { width: min(var(--content-width), calc(100% - 44px)); }
+  .hero-section { min-height: auto; padding-top: 68px; }
+  .hero-grid { grid-template-columns: 1fr .8fr; gap: 4%; }
+  .hero-copy h1 { font-size: clamp(48px, 7.5vw, 72px); }
+  .portrait-image-wrap { height: 330px; }
+  .hero-visual { padding-inline: 10px; }
+  .science-stamp { right: -13px; }
+  .floating-note { right: -23px; }
+  .interest-grid { grid-template-columns: repeat(2, 1fr); }
+  .interest-card { min-height: 205px; padding: 23px !important; border-bottom: 1px solid var(--line); }
+  .interest-card:nth-child(2) { border-right: 0; }
+  .interest-card:nth-child(3), .interest-card:nth-child(4) { border-bottom: 0; }
+  .publication-item { grid-template-columns: 65px 1fr 160px; gap: 17px; }
+}
+@media (max-width: 650px) {
+  .container { width: calc(100% - 38px); }
+  .topline-inner { min-height: 30px; }
+  .topline-note { display: none; }
+  .nav-wrap { min-height: 70px; }
+  .brand { min-width: 0; }
+  .brand-mark { width: 38px; height: 38px; }
+  .menu-toggle { display: flex; width: 42px; height: 42px; flex-direction: column; align-items: center; justify-content: center; gap: 5px; border: 1px solid var(--line); background: transparent; cursor: pointer; }
+  .menu-toggle span { display: block; width: 17px; height: 1px; background: var(--ink); transition: transform .2s, opacity .2s; }
+  .menu-toggle[aria-expanded="true"] span:first-child { transform: translateY(6px) rotate(45deg); }
+  .menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-6px) rotate(-45deg); }
+  .primary-nav { position: fixed; z-index: 60; top: 100px; right: 0; left: 0; display: flex; visibility: hidden; flex-direction: column; align-items: stretch; gap: 0; padding: 12px 25px 25px; border-bottom: 1px solid var(--line); background: var(--paper); opacity: 0; transform: translateY(-8px); transition: opacity .2s, transform .2s, visibility .2s; }
+  .primary-nav.is-open { visibility: visible; opacity: 1; transform: translateY(0); }
+  .nav-link { padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .nav-link:last-child { border-bottom: 0; }
+  .hero-section { padding: 57px 0 27px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 16px; }
+  .hero-copy { padding: 0; }
+  .hero-copy .eyebrow { margin-bottom: 22px; }
+  .hero-copy h1 { font-size: clamp(54px, 15vw, 76px); }
+  .hero-description { max-width: 100%; font-size: 13px; }
+  .hero-meta { margin-top: 32px; font-size: 9px; }
+  .hero-visual { width: min(88%, 340px); justify-self: center; margin: 5px auto 15px; }
+  .portrait-image-wrap { height: 320px; }
+  .science-stamp { right: -23px; }
+  .floating-note { right: -24px; bottom: 54px; }
+  .hero-bottom { margin-top: 12px; font-size: 7px; }
+  .section { padding: 76px 0; }
+  .two-column { grid-template-columns: 1fr; gap: 20px; }
+  .section-heading h2, .section-topline h2, .contact-preview h2 { font-size: 44px; }
+  .section-index { margin-top: 24px; }
+  .about-content { padding-top: 0; }
+  .large-copy { font-size: 21px; }
+  .research-section { padding: 75px 0; }
+  .section-topline { align-items: flex-start; flex-direction: column; gap: 18px; margin-bottom: 30px; }
+  .section-aside { max-width: 100%; }
+  .interest-grid { grid-template-columns: 1fr 1fr; }
+  .interest-card { min-height: 215px; padding: 20px 13px !important; }
+  .interest-card:nth-child(2) { border-right: 0; }
+  .interest-card h3 { font-size: 17px; }
+  .interest-card p { font-size: 10px; }
+  .publications-section .section-topline { gap: 14px; }
+  .publication-item { grid-template-columns: 52px 1fr; gap: 9px 14px; padding: 22px 0; }
+  .publication-year { grid-row: span 2; font-size: 19px; }
+  .publication-main h3 { font-size: 18px; }
+  .doi-link { grid-column: 2; width: fit-content; max-width: 100%; }
+  .empty-state { align-items: flex-start; gap: 13px; }
+  .empty-symbol { font-size: 33px; }
+  .empty-state h3 { font-size: 18px; }
+  .empty-label { display: none; }
+  .articles-section { padding: 76px 0 28px; }
+  .article-grid { grid-template-columns: 1fr; }
+  .article-card { min-height: 270px; }
+  .article-side-note { min-height: 230px; }
+  .articles-bottom { margin-top: 38px; font-size: 7px; }
+  .contact-preview { padding: 75px 0; }
+  .contact-preview-inner { grid-template-columns: 1fr; gap: 24px; }
+  .footer-main { align-items: flex-start; flex-direction: column; padding: 32px 0; gap: 16px; }
+  .footer-main > p { font-size: 13px; }
+  .footer-bottom { flex-direction: column; gap: 6px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .reveal { opacity: 1; transform: none; }
+}
+
+
+
+================================================================================
+FILE: site-data.js
+================================================================================
+
+/* =====================================================================
+   YOUR WEBSITE CONTENT — EDIT THIS FILE TO UPDATE MOST TEXT AND CONTENT
+   =====================================================================
+   1. Replace the sample name, role, affiliation and biography below.
+   2. Add your real publication details to the `publications` array.
+   3. Add your blog articles to the `articles` array. Put PDFs in assets/pdfs/.
+   4. Do not delete commas or quotation marks while editing the lists.
+*/
+
+window.SITE_DATA = {
+  // ---------- PERSONAL / HOME PAGE DETAILS ----------
+  name: "Subhashish Sarma",
+  monogram: "SS",
+  heroKicker: "ACADEMIC PROFILE · ZOOLOGY",
+  role: "PhD Scholar in Zoology",
+  affiliation: "Department of Zoology · Rabindranath Thakur Vishwavidyalaya, Hojai, Assam",
+  photoCaption: "Ph.D. Scholar · Zoology",
+  heroDescription: "Investigating bacterial communities associated with lepidopteran gut systems through an integrated approach combining microbiology and genomics.",
+
+  // Short paragraph shown prominently in the About section.
+  aboutLead: "I am a Ph.D. scholar in the Department of Zoology at Rabindranath Thakur Vishwavidyalaya. My doctoral research investigates the bacterial communities associated with the gut of lepidopteran insects using an integrated approach that combines microbiology and genomics.",
+  // Supporting About paragraph. Add your education, experience and other details here.
+  aboutBody: "I hold a Master’s degree from Cotton University, where I specialised in Entomology. My broader research interests include antimicrobial resistance (AMR), bacteriophages, bioprospecting, pollution ecology, and the effects of climate change on biodiversity. Beyond academia, I enjoy cooking, photography, and watching films and web series.",
+
+  // ---------- RESEARCH INTEREST CARDS ----------
+  interests: [
+    {
+      number: "01",
+      icon: "◉",
+      title: "Lepidopteran gut bacteriomes",
+      description: "Investigating bacterial communities associated with lepidopteran insects through microbiological and genomic approaches."
+    },
+    {
+      number: "02",
+      icon: "⌁",
+      title: "AMR & bacteriophages",
+      description: "Exploring antimicrobial resistance and bacteriophages, including their relevance to bacterial control."
+    },
+    {
+      number: "03",
+      icon: "❋",
+      title: "Bioprospecting",
+      description: "Exploring biological resources and microorganisms for their potential scientific and practical applications."
+    },
+    {
+      number: "04",
+      icon: "⌬",
+      title: "Environmental ecology",
+      description: "Examining pollution ecology and the effects of climate change on biodiversity and ecological communities."
+    }
+  ],
+
+  // ---------- LATEST PUBLICATIONS ----------
+  // Add newest publications first. `doi` can be entered as 10.xxxx/xxxxx.
+  // `url` should be the DOI URL, e.g. https://doi.org/10.xxxx/xxxxx
+  // Keep the array empty until you provide verified titles and DOI details.
+  publications: [],
+
+  // Example format for a publication (copy this object inside the array):
+  // {
+  //   year: "2026",
+  //   title: "Full title of your research article",
+  //   journal: "Journal Name",
+  //   authors: "Author A, Author B, Your Name",
+  //   abstract: "A short, accurate abstract or summary for the home page.",
+  //   doi: "10.xxxx/xxxxx",
+  //   url: "https://doi.org/10.xxxx/xxxxx"
+  // },
+
+  // ---------- LATEST BLOG ARTICLES ----------
+  // Put each PDF inside assets/pdfs/ and enter its relative path in `pdf`.
+  // Add newest articles first. These will appear as preview cards on the home page.
+  articles: [],
+
+  // Example format for an article (copy this object inside the array):
+  // {
+  //   date: "11 November 2026",
+  //   category: "MICROBIAL ECOLOGY",
+  //   readTime: "5 min read",
+  //   title: "Your article title goes here",
+  //   excerpt: "A short preview that encourages visitors to read the complete article.",
+  //   pdf: "assets/pdfs/your-article.pdf"
+  // },
+
+  // ---------- CONTACT ----------
+  // Used by the home page contact button. Replace with your professional email.
+  email: "REPLACE_WITH_YOUR_EMAIL"
+};
+
+
+
+================================================================================
+FILE: script.js
+================================================================================
+
+/* HOME PAGE INTERACTIONS — most text/content is edited in site-data.js */
+(() => {
+  const data = window.SITE_DATA || {};
+  const $ = (selector, parent = document) => parent.querySelector(selector);
+  const $$ = (selector, parent = document) => [...parent.querySelectorAll(selector)];
+
+  // Apply personal information stored in site-data.js.
+  $$('[data-site-name]').forEach(el => el.textContent = data.name || 'Your Name');
+  $$('[data-monogram]').forEach(el => el.textContent = data.monogram || 'YN');
+  const textBindings = {
+    '[data-hero-kicker]': data.heroKicker,
+    '[data-role]': data.role,
+    '[data-affiliation]': data.affiliation,
+    '[data-photo-caption]': data.photoCaption,
+    '[data-hero-description]': data.heroDescription,
+    '[data-about-lead]': data.aboutLead,
+    '[data-about-body]': data.aboutBody
+  };
+  Object.entries(textBindings).forEach(([selector, value]) => {
+    if (value) $$(selector).forEach(el => el.textContent = value);
+  });
+  if (data.name) {
+    const heading = $('[data-hero-heading]');
+    if (heading) {
+      const parts = data.name.trim().split(/\s+/);
+      const last = parts.pop() || '';
+      heading.replaceChildren(document.createTextNode(parts.join(' ') + (parts.length ? ' ' : '')));
+      const em = document.createElement('em');
+      em.textContent = last + '.';
+      heading.appendChild(em);
+    }
+    document.title = `${data.name} | Research & Scientific Writing`;
+  }
+
+  // Load your portrait from assets/profile.png. Otherwise retain initials.
+  const photo = $('#profile-photo');
+  const fallback = $('#portrait-fallback');
+  if (photo && fallback) {
+    photo.addEventListener('load', () => {
+      photo.hidden = false;
+      fallback.hidden = true;
+    });
+    photo.addEventListener('error', () => {
+      photo.hidden = true;
+      fallback.hidden = false;
+    });
+    if (photo.complete && photo.naturalWidth > 0) {
+      photo.hidden = false;
+      fallback.hidden = true;
+    }
+  }
+
+  // Research interest cards: content comes from site-data.js.
+  const interestGrid = $('#interest-grid');
+  if (interestGrid && Array.isArray(data.interests) && data.interests.length) {
+    interestGrid.innerHTML = data.interests.map((item, index) => `
+      <article class="interest-card reveal ${index ? `reveal-delay-${Math.min(index, 3)}` : ''}">
+        <span class="interest-number">${escapeHTML(item.number || String(index + 1).padStart(2, '0'))}</span>
+        <span class="interest-icon" aria-hidden="true">${escapeHTML(item.icon || '◉')}</span>
+        <h3>${escapeHTML(item.title || '')}</h3>
+        <p>${escapeHTML(item.description || '')}</p>
+      </article>`).join('');
+  }
+
+  // Latest publications: only verified records entered in site-data.js are displayed.
+  const publicationList = $('#publication-list');
+  if (publicationList) {
+    if (Array.isArray(data.publications) && data.publications.length) {
+      publicationList.innerHTML = data.publications.slice(0, 3).map((pub, index) => `
+        <article class="publication-item reveal">
+          <div class="publication-year">${escapeHTML(pub.year || '—')}</div>
+          <div class="publication-main">
+            <p class="publication-journal">${escapeHTML(pub.journal || 'RESEARCH PUBLICATION')}</p>
+            <h3>${escapeHTML(pub.title || 'Untitled publication')}</h3>
+            ${pub.authors ? `<p class="publication-authors">${escapeHTML(pub.authors)}</p>` : ''}
+            ${pub.abstract ? `<p class="publication-abstract">${escapeHTML(pub.abstract)}</p>` : ''}
+          </div>
+          <a class="doi-link" href="${safeURL(pub.url || (pub.doi ? `https://doi.org/${pub.doi}` : ''))}" target="_blank" rel="noopener noreferrer" aria-label="Open DOI for ${escapeHTML(pub.title || 'publication')}" ${pub.url || pub.doi ? '' : 'aria-disabled="true"'}>
+            <span>DOI</span><b>${escapeHTML(pub.doi || 'TO BE ADDED')}</b><i aria-hidden="true">↗</i>
+          </a>
+        </article>`).join('');
+    } else {
+      publicationList.innerHTML = `<div class="empty-state reveal"><span class="empty-symbol">⌁</span><div><h3>Your latest research will appear here.</h3><p>Add publication titles, abstracts and DOI links in <code>site-data.js</code> when your verified list is ready.</p></div><span class="empty-label">PUBLICATIONS / INCOMING</span></div>`;
+    }
+  }
+
+  // Latest blog article cards. Each card opens its complete PDF in a new tab.
+  const articleGrid = $('#article-grid');
+  if (articleGrid) {
+    if (Array.isArray(data.articles) && data.articles.length) {
+      articleGrid.innerHTML = data.articles.slice(0, 3).map((article, index) => `
+        <article class="article-card reveal ${index ? `reveal-delay-${index}` : ''}">
+          <div class="article-card-top"><span>${escapeHTML(article.category || 'FIELD NOTES')}</span><span>${escapeHTML(article.readTime || 'ARTICLE')}</span></div>
+          <div class="article-card-body">
+            <p class="article-date">${escapeHTML(article.date || '')}</p>
+            <h3>${escapeHTML(article.title || 'Untitled article')}</h3>
+            <p>${escapeHTML(article.excerpt || '')}</p>
+            <a class="article-read" href="${safeURL(article.pdf || '#')}" target="_blank" rel="noopener noreferrer">Read article <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>`).join('');
+    } else {
+      articleGrid.innerHTML = `<article class="article-card article-placeholder reveal"><div class="article-card-top"><span>WEEKLY NOTEBOOK</span><span>COMING SOON</span></div><div class="article-card-body"><p class="article-date">YOUR NEXT ARTICLE</p><h3>A space for ideas, observations and scientific stories.</h3><p>Your newest article preview will appear here. Add its title, short introduction and PDF path in <code>site-data.js</code>.</p><span class="article-read muted-read">Full article PDF <span aria-hidden="true">↗</span></span></div></article>
+      <div class="article-side-note reveal reveal-delay-1"><span class="side-note-icon">✳</span><p>One carefully considered idea can make a complex scientific subject more approachable.</p><span class="side-note-label">NOTES FROM THE FIELD</span></div>`;
+    }
+  }
+
+  // Contact button uses the email in site-data.js once it has been replaced.
+  const contactButton = $('.contact-preview .button');
+  if (contactButton && data.email && data.email !== 'REPLACE_WITH_YOUR_EMAIL') {
+    contactButton.href = `mailto:${data.email}`;
+  }
+
+  // Mobile navigation.
+  const menuToggle = $('#menu-toggle');
+  const nav = $('#primary-nav');
+  if (menuToggle && nav) {
+    menuToggle.addEventListener('click', () => {
+      const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', String(!isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Open navigation menu' : 'Close navigation menu');
+      nav.classList.toggle('is-open', !isOpen);
+      document.body.classList.toggle('menu-open', !isOpen);
+    });
+    $$('.nav-link', nav).forEach(link => link.addEventListener('click', () => {
+      nav.classList.remove('is-open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Open navigation menu');
+      document.body.classList.remove('menu-open');
+    }));
+  }
+
+  // Header styling after scroll.
+  const header = $('.site-header');
+  const updateHeader = () => header?.classList.toggle('scrolled', window.scrollY > 24);
+  updateHeader();
+  window.addEventListener('scroll', updateHeader, { passive: true });
+
+  // Reveal sections as they enter the viewport; reveal immediately if unsupported.
+  const revealItems = $$('.reveal');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealItems.forEach(item => observer.observe(item));
+  } else {
+    revealItems.forEach(item => item.classList.add('is-visible'));
+  }
+
+  // Current year in footer.
+  const year = $('#current-year');
+  if (year) year.textContent = new Date().getFullYear();
+
+  function escapeHTML(value) {
+    return String(value).replace(/[&<>"']/g, char => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    })[char]);
+  }
+  function safeURL(value) {
+    try {
+      const url = new URL(value, window.location.href);
+      return ['http:', 'https:', 'file:'].includes(url.protocol) ? url.href : '#';
+    } catch {
+      return '#';
+    }
+  }
+})();
+
+
+
+================================================================================
+FILE: README.md
+================================================================================
+
+# Academic Website — Home Page (Stage 1)
+
+This is the first stage of a multi-page academic website. It is built with plain HTML, CSS and JavaScript so it is lightweight and easy to edit. The next stages can add `publications.html`, `blog.html` and `contact.html` while retaining the same design system.
+
+## Preview locally
+
+1. Extract the project folder if you received it as a ZIP.
+2. Open `index.html` in a modern browser. For best results, run a local server from this folder:
+   - Windows: open PowerShell in this folder and run `py -m http.server 8000`
+   - macOS/Linux: run `python3 -m http.server 8000`
+3. Visit `http://localhost:8000`.
+
+## Exactly where to make changes
+
+| What you want to change | File and exact place |
+|---|---|
+| Your name, role and university | `site-data.js` → `name`, `role`, `affiliation` |
+| Hero introduction paragraph | `site-data.js` → `heroDescription` |
+| About biography and education | `site-data.js` → `aboutLead` and `aboutBody` |
+| Research-interest cards | `site-data.js` → `interests` array |
+| About Me text | `site-data.js` → `aboutLead` and `aboutBody` |
+| Your photograph | Replace `assets/profile.png` with your preferred PNG portrait (the supplied image has a transparent circular edge) |
+| Small initials shown before adding a photo | `site-data.js` → `monogram` |
+| Research interest cards | `site-data.js` → `interests` array |
+| Latest publications | `site-data.js` → `publications` array |
+| Weekly blog preview cards | `site-data.js` → `articles` array |
+| Blog PDF files | Put files in `assets/pdfs/`, then enter the path in each article's `pdf` field |
+| Contact email used by the home page button | `site-data.js` → `email` |
+| Website colours and fonts | `styles.css` → `:root` variables at the very top |
+| Section spacing, sizes and layout | `styles.css` → the named section blocks |
+| Navigation labels and destination links | `index.html` → `<nav id="primary-nav">` |
+| JavaScript interactions | `script.js` |
+
+## Adding a publication
+
+In `site-data.js`, find `publications: []` and add objects in newest-first order. Example:
+
+```js
+publications: [
+  {
+    year: "2026",
+    title: "Full title of your research article",
+    journal: "Journal Name",
+    authors: "Author A, Author B, Your Name",
+    abstract: "A short, accurate abstract or summary for the home page.",
+    doi: "10.xxxx/xxxxx",
+    url: "https://doi.org/10.xxxx/xxxxx"
+  }
+],
+```
+
+## Adding a blog article
+
+Put the PDF in `assets/pdfs/`, then add an object to `articles` in `site-data.js`:
+
+```js
+articles: [
+  {
+    date: "11 November 2026",
+    category: "MICROBIAL ECOLOGY",
+    readTime: "5 min read",
+    title: "Your article title goes here",
+    excerpt: "A short preview of the article.",
+    pdf: "assets/pdfs/your-article.pdf"
+  }
+],
+```
+
+The first three items in each array appear on the home page. Add newest items first. Do not add invented publication or DOI information; use the details exactly as published.
+
+## Current stage notes
+
+- This delivery contains the Home page only.
+- The Publications, Blog and Contact navigation items currently scroll to the relevant home-page preview/contact sections. They will be changed to their separate page URLs when those pages are built.
+- Publication and blog preview areas intentionally show placeholders until you provide verified publication details and article PDFs.
+- Your supplied photograph is installed as `assets/profile.png`. To change it later, replace that file while keeping the same filename, or update the `src` in `index.html`.
+- The About section currently includes your doctoral focus, Master’s specialisation in Entomology at Cotton University, wider research interests, and hobbies. Edit `aboutLead` and `aboutBody` in `site-data.js` to revise this text.
+- No real contact email has been inserted yet.
